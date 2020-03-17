@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Images/front.png</file>
+        <file>Resources/Images/left.png</file>
+        <file>Resources/Images/move.png</file>
+        <file>Resources/Images/perspective.png</file>
+        <file>Resources/Images/rotate.png</file>
+        <file>Resources/Images/scale.png</file>
+        <file>Resources/Images/top.png</file>
+        <file>Resources/Images/ultraed.ico</file>
+    </qresource>
+</RCC>

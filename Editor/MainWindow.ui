@@ -14,8 +14,8 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>ultraed.ico</normaloff>ultraed.ico</iconset>
+   <iconset resource="Resource.qrc">
+    <normaloff>:/Resources/Images/ultraed.ico</normaloff>:/Resources/Images/ultraed.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -111,6 +111,43 @@
    <addaction name="menuMovement"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMove"/>
+   <addaction name="actionRotate"/>
+   <addaction name="actionScale"/>
+   <addaction name="separator"/>
+   <addaction name="actionPerspective"/>
+   <addaction name="actionTop"/>
+   <addaction name="actionLeft"/>
+   <addaction name="actionFront"/>
+  </widget>
   <action name="actionNew_Scene">
    <property name="text">
     <string>New Scene</string>
@@ -287,7 +324,72 @@
     <string>H</string>
    </property>
   </action>
+  <action name="actionMove">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/move.png</normaloff>:/Resources/Images/move.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move</string>
+   </property>
+  </action>
+  <action name="actionRotate">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/rotate.png</normaloff>:/Resources/Images/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotate</string>
+   </property>
+  </action>
+  <action name="actionScale">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/scale.png</normaloff>:/Resources/Images/scale.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scale</string>
+   </property>
+  </action>
+  <action name="actionPerspective">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/perspective.png</normaloff>:/Resources/Images/perspective.png</iconset>
+   </property>
+   <property name="text">
+    <string>Persp.</string>
+   </property>
+  </action>
+  <action name="actionTop">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/top.png</normaloff>:/Resources/Images/top.png</iconset>
+   </property>
+   <property name="text">
+    <string>Top</string>
+   </property>
+  </action>
+  <action name="actionLeft">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/left.png</normaloff>:/Resources/Images/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionFront">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/Resources/Images/front.png</normaloff>:/Resources/Images/front.png</iconset>
+   </property>
+   <property name="text">
+    <string>Front</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
