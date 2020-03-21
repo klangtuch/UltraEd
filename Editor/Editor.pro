@@ -17,10 +17,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Main.cpp \
-    MainWindow.cpp
+    MainWindow.cpp \
+    Scene.cpp
 
 HEADERS += \
-    MainWindow.h
+    MainWindow.h \
+    Scene.h
+
+LIBS += \
+    -L"Deps/DXSDK/lib" -ld3d8
 
 FORMS += \
     MainWindow.ui

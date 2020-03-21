@@ -17,7 +17,13 @@
    <iconset resource="Resource.qrc">
     <normaloff>:/Resources/Images/ultraed.ico</normaloff>:/Resources/Images/ultraed.ico</iconset>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="scene" native="true"/>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
